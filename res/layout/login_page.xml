@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background_image">
+
+    <TextView
+        android:id="@+id/studentlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Attendance Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="170dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_below="@id/studentlogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Username"
+        android:autofillHints="name"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:autofillHints="password"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/orask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@id/btnLogin"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="or"
+        android:textSize="25sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_below="@id/orask"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

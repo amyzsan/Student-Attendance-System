@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/bg">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/addclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6495ED"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add Class"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Class Name Input -->
+    <EditText
+        android:id="@+id/class_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Class Name"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Class Code Input -->
+    <EditText
+        android:id="@+id/class_code_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Class Code"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:elevation="2dp"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Add Class Button -->
+    <Button
+        android:id="@+id/add_class_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Class"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:elevation="3dp" />
+
+    <Button
+        android:id="@+id/view_classes_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="View Classes"
+        android:background="@color/black"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:elevation="3dp"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>

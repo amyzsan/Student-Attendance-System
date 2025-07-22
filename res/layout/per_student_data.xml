@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/nav_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6495ED"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:text="Student Data"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- ScrollView for Attendance List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <!-- Table Header -->
+            <TableRow>
+                <TextView
+                    android:text="ID"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Student Name"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Father Name"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Contact"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <!-- Sample Rows -->
+            <TableRow>
+                <TextView
+                    android:text="1001"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="James William"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Jack"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="948784548"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="1002"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Jack David"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Michael"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="865784948"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="1003"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Emily Brown"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="Robert"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="795454654"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:padding="8dp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <!-- View Attendance Button -->
+    <Button
+        android:id="@+id/viewAttendanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Attendance"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
